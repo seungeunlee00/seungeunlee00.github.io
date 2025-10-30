@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Seungeun Lee
+title: Alex Johnson
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Seungeun
-last_name: Lee
+first_name: Alex
+last_name: Johnson
 
 # Pronouns (optional)
 pronouns: he/him
