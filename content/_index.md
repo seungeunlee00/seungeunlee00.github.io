@@ -3,7 +3,6 @@
 title: ''
 date: 2025-10-30
 type: landing
-draft: true
 
 design:
   # Default section spacing
@@ -22,8 +21,12 @@ sections:
       # buttons:
       #   - text: Download CV
       #     url: uploads/resume.pdf
+      #     size: sm
+      #     new_tab: true
       #   - text: Download Portfolio
       #     url: uploads/resume.pdf
+      #     size: sm
+      #     new_tab: true
       headings:
         about: ''
         education: ''
