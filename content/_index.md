@@ -15,22 +15,22 @@ sections:
       username: bio
       text: ''
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      buttons:
-        - text: Google Scholar
-          url: https://scholar.google.com/...
-          icon: simple/google-scholar   # 선택
-          style: primary                # primary | outline | soft | link
-          size: sm                      # sm | md
-          new_tab: true
-        - text: GitHub
-          url: https://github.com/your-id
-          icon: mdi/github
-          style: outline
-          size: sm
-          new_tab: true
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
+      # buttons:
+      #   - text: Google Scholar
+      #     url: https://scholar.google.com/...
+      #     icon: simple/google-scholar   # 선택
+      #     style: primary                # primary | outline | soft | link
+      #     size: sm                      # sm | md
+      #     new_tab: true
+      #   - text: GitHub
+      #     url: https://github.com/your-id
+      #     icon: mdi/github
+      #     style: outline
+      #     size: sm
+      #     new_tab: true
       headings:
         about: ''
         education: ''
@@ -42,6 +42,18 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: buttons
+    content:
+      buttons:
+        - title: Read my latest paper on LLMs
+          icon: brands/arxiv
+          url: https://arxiv.org/abs/2304.01852
+        - title: Watch my new YouTube video to achieve 20x productivity
+          icon: brands/youtube
+          url: https://youtube.com
+        - title: Connect with me on LinkedIn
+          icon: brands/linkedin
+          url: https://linkedin.com
   - block: resume-experience
     content:
       username: admin
