@@ -80,31 +80,9 @@ awards:
       RHOBIN Challenge: Track on human-object contact prediction from a single image. 
 
       [Certificate](uploads/resume.pdf)
-      
-    
-  # - title: Best Paper Award
-  #   url: https://neurips.cc/
-  #   date: '2022-12-01'
-  #   awarder: NeurIPS
-  #   icon: hero/trophy
-  #   summary: |
-  #     Awarded for groundbreaking work on efficient training of large models.
-  # - title: AI Innovation Grant
-  #   url: https://www.nsf.gov/
-  #   date: '2021-06-15'
-  #   awarder: National Science Foundation
-  #   icon: hero/currency-dollar
-  #   summary: |
-  #     $500,000 grant for research in ethical AI development.
-  # - title: Outstanding PhD Thesis
-  #   url: https://www.stanford.edu/
-  #   date: '2019-06-30'
-  #   awarder: Stanford University
-  #   icon: hero/academic-cap
-  #   summary: |
-  #     Recognized for contributions to scaling laws in deep learning.
+
 ---
 
-Hi! I am a AI Researcher at Future AI Team, [KLleon](https://klleon.io), where I am fortunate to be advised by Gyeong-Moon Park. Previously, I obtained my M.S. degree at UNIST advised by Ilwoo-Lyu (currently at POSTECH). During the journey, I visited NAVER CLOVA at a research intern, in 2022. 
+<!-- Hi! I am a AI Researcher at Future AI Team, [KLleon](https://klleon.io), where I am fortunate to be advised by Gyeong-Moon Park. Previously, I obtained my M.S. degree at UNIST advised by Ilwoo-Lyu (currently at POSTECH). During the journey, I visited NAVER CLOVA at a research intern, in 2022. 
 
-The goal of my research is 
+The goal of my research is  -->
