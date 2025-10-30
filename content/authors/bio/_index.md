@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Seungeun Lee
+# title: Seungeun Lee
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -10,7 +10,7 @@ first_name: Seungeun
 last_name: Lee
 
 # Pronouns (optional)
-pronouns: he/him
+# pronouns: he/him
 
 # Status emoji
 status:
@@ -23,29 +23,30 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+# role: Senior AI Research Scientist
+role: Seungeun Lee
 
 # Organizations/Affiliations to display in Biography blox
-organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+# organizations:
+#   - name: Meta AI
+#     url: https://ai.meta.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles:
-  - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
-  - icon: brands/github
-    url: https://github.com/alexjohnsonai
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+# profiles:
+#   - icon: at-symbol
+#     url: 'mailto:alex.johnson@meta.com'
+#     label: E-mail Me
+#   - icon: brands/x
+#     url: https://twitter.com/AlexAIResearch
+#   - icon: brands/github
+#     url: https://github.com/alexjohnsonai
+#   - icon: brands/linkedin
+#     url: https://www.linkedin.com/in/alexjohnsonai/
+#   - icon: academicons/google-scholar
+#     url: https://scholar.google.com/citations?user=alexjohnson
+#   - icon: academicons/orcid
+#     url: https://orcid.org/0000-0002-1825-0097
 
 interests:
   - Large Language Models
