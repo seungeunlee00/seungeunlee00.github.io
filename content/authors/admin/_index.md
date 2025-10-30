@@ -10,7 +10,7 @@ first_name: Seungeun
 last_name: Lee
 
 # Pronouns (optional)
-pronouns: he/him
+# pronouns: he/him
 
 # Status emoji
 status:
@@ -23,88 +23,45 @@ superuser: true
 highlight_name: true
 
 interests:
-  - Large Language Models
   - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Machine Learning
+  - 3D Human/Avatar Modeling & Animation
+  - 3D Shape Analysis
 
 education:
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+  - area: M.S
+    institution: Ulsan National Institute of Science and Technology (UNIST)
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    date_start: 2021-02-01
+    date_end: 2023-09-01
     summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+      GPA: 4.2/4.5 (rank: 3/89)
+  - area: B.S.
+    institution: Inha University
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 2017-02-01
+    date_end: 2021-01-01
     summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+      GPA: 4.2/4.5 (rank: 3/89)
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: AI Researcher
+    company_name: KLleon
+    company_url: 'https://www.klleon.io/'
     icon: ''
-    date_start: 2020-01-01
+    date_start: 2023-11-20
     date_end: ''
     summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
+      Role: Mainly conducting research on creating animatable 3D whole-body avatar from a single image/video. 
   - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+    company_name: NAVER CLOVA
+    company_url: ''
     icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
+    date_start: 2022-06-01
+    date_end: 2022-11-01
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Role: Developing robust and temporally consistent single-human 3D pose/motion estimation system from multi-view videos.
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
-        icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
-        description: ''
-        percent: 85
-        icon: cloud
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
-        percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
-        icon: book-open
-
-languages:
-  - name: English
-    percent: 100
-  - name: Spanish
-    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -115,13 +72,13 @@ awards:
     date: '2024-11-01'
     awarder: ECCV Workshop
     icon: hero/trophy
+    url: uploads/resume.pdf # [Certificate](uploads/resume.pdf)
     # button:
     #   text: 'Certificate'
     #   url: 'https://example.com/thesis.pdf'
     summary: |
-      RHOBIN Challenge: Contact estimation from a single image. 
-
-      [Certificate](uploads/resume.pdf)
+      RHOBIN Challenge: Track on human-object contact prediction from a single image. 
+      
     
   # - title: Best Paper Award
   #   url: https://neurips.cc/
@@ -146,4 +103,6 @@ awards:
   #     Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+Hi! I am a AI Researcher at Future AI Team, [KLleon](https://klleon.io), where I am fortunate to be advised by Gyeong-Moon Park. Previously, I obtained my M.S. degree at UNIST advised by Ilwoo-Lyu (currently at POSTECH). During the journey, I visited NAVER CLOVA at a research intern, in 2022. 
+
+The goal of my research is 
