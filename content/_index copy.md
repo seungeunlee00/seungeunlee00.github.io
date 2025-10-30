@@ -18,8 +18,6 @@ sections:
       button:
         - text: Download CV
           url: uploads/resume.pdf
-        - text: Download CV
-          url: uploads/resume.pdf
       headings:
         about: ''
         education: ''
@@ -59,9 +57,10 @@ sections:
         folders:
           - publications
         featured_only: true
-    # design:
-    #   view: article-grid
-    #   columns: 2
+    design:
+      # view: article-grid
+      view: citation
+      # columns: 2
   - block: collection
     content:
       title: Recent Publications
