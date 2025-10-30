@@ -18,6 +18,11 @@ sections:
       button:
         text: Download CV
         url: uploads/resume.pdf
+      # buttons:
+      #   - text: Download CV
+      #     url: uploads/resume.pdf
+      #   - text: Download Portfolio
+      #     url: uploads/resume.pdf
       headings:
         about: ''
         education: ''
