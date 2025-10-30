@@ -3,6 +3,7 @@
 title: ''
 date: 2025-10-30
 type: landing
+draft: true
 
 design:
   # Default section spacing
