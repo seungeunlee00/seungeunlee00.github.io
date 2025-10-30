@@ -78,6 +78,8 @@ awards:
     #   url: 'https://example.com/thesis.pdf'
     summary: |
       RHOBIN Challenge: Track on human-object contact prediction from a single image. 
+
+      [Certificate](uploads/resume.pdf)
       
     
   # - title: Best Paper Award
