@@ -15,22 +15,14 @@ sections:
       username: bio
       text: ''
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
       buttons:
-        - text: Google Scholar
-          url: https://scholar.google.com/...
-          icon: simple/google-scholar   # 선택
-          style: primary                # primary | outline | soft | link
-          size: sm                      # sm | md
-          new_tab: true
-        - text: GitHub
-          url: https://github.com/your-id
-          icon: mdi/github
-          style: outline
-          size: sm
-          new_tab: true
+        - text: Download CV
+          url: uploads/resume.pdf
+        - text: Download Portpolio
+          url: uploads/resume.pdf
       headings:
         about: ''
         education: ''
