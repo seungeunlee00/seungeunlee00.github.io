@@ -513,6 +513,11 @@ img {
     font-weight: 600;
 }
 
+.news-text .pub-venue-tag {
+    margin-left: 6px;
+    white-space: nowrap;
+}
+
 /* ═══════════════════════════════════════════════════════════
    Publications
    ═══════════════════════════════════════════════════════════ */
