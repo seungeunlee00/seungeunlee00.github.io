@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>Feed-forward 3D Gaussian Reconstruction Model for Animatable 3D Talking Avatars</title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">Feed-forward 3D Gaussian Reconstruction Model for Talking Avatars</h1>
+            <!-- <div class="is-size-5 publication-authors"> -->
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <!-- <span class="author-block">
+                <a href="https://seungeunlee00.github.io/" target="_blank">Seungeun Lee<sup>1</sup></a>,</span>
+                  <span class="author-block">
+                    <a href="https://gyeongmoon.github.io/" target="_blank">Gyeong-Moon Park<sup>1,2</sup></a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors"> -->
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <!-- <span class="author-block">KLleon<sup>1</sup>, Korea University<sup>2</sup></span>
+                  </div> -->
+
+                  <!-- <div class="column has-text-centered"> -->
+                    <!-- <div class="publication-links"> -->
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2510.01619.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- <span class="link-block">
+                      <a href="https://youtu.be/ytrKDNqACqM" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>SuppVideo</span>
+                    </a>
+                  </span> -->
+            <!-- </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+         <b>TL;DR.</b> Generalizable feed-forward 3DGS model that reconstructs and animates 3D talking avatars only given a reference image at inference time.
+      </h2>
+      <!-- TODO: Replace with your teaser video -->
+      <!-- <img src="static/images/MPMAvatar_Teaser.jpg" class="center"> -->
+      <!-- TODO: Replace with your video description -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/teaser.mp4" type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered"> -->
+      <h2 class="content has-text-justified">
+        <p>
+          <b>Task Description: </b> This task aims to generate realistic 3D avatar animations driven by parametric motion signals. Given a single reference image as input, the system reconstructs a personalized 3D avatar and animates it according to SMPL-X pose sequences that represent parametric body motions. The output consists of an animated 3D avatar and a corresponding rendered video that visualizes the avatar performing the specified motions.
+        </p>
+
+
+         <p>
+          <b>Role:</b> Problem Definition, Existing Work Analysis, Idea Conceptualization, Model Design & Implementation, Data Collection/Pre-Processing, Training, Test and Evaluation
+         </p>
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+          Recently, research on 3D Gaussian Splatting–based neural rendering has shifted from optimization-based methods to generalizable modeling approaches. This paradigm enables fast, single feed-forward inference for static scenes while maintaining high-fidelity rendering quality. However, modeling animatable 3D Gaussian avatars that capture dynamic motion remains relatively unexplored.
+          </p>
+
+          <p>
+          In this paper, we present the first feed-forward 3D Gaussian Splatting (3DGS) model for full-body, expressive, and talking 3D avatars. Unlike previous optimization-based Gaussian talking avatar methods that require costly subject-specific training, our model achieves real-time inference for arbitrary subjects through a single-step feed-forward process, significantly reducing computational overhead while preserving rendering realism.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Motivation -->
+ <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Motivation </h2>
+      </div>
+      <!-- <img src="static/images/motivation.png" class="center"> -->
+      <div class="content has-text-justified">
+        <!-- <ul>
+          <li> -->
+          <p>
+            Existing optimization-based methods for creating animatable 3D avatars are computationally expensive and inefficient in practice.
+          </p>
+
+          <ol type="i">
+            <li>
+              Subject-specific optimization: Traditional optimization-based 3D Gaussian Splatting (3DGS) approaches require an individually optimized model for each subject. This repetitive optimization process leads to long fitting times before achieving renderable results, significantly limiting scalability and usability.
+            </li>
+            <li>
+              High computation cost for video data synthesis: To generate an animation-ready avatar from only one reference image, a large number of synthetic videos corresponding to the target identity are typically required. However, current high-quality generative models demand extensive computation — for example, generating a 5-second video with the WAN model takes approximately 1.5–2 hours on an A100 GPU — making such pipelines impractical for real-time or large-scale deployment.
+            </li>
+          </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+ <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Method Overview</h2>
+      </div>
+      <img src="static/images/overview.png" class="center">
+      <!-- <h2 class="subtitle has-text-justified"> -->
+      <div class="content has-text-justified">
+        <p>
+          Our model jointly leverages UV-Gaussian and point-wise Gaussian representations to learn a canonical 3D Gaussian reconstruction of the avatar.
+        </p>
+
+        <p>
+          From the input reference image, we first extract visual features using DINOv2. The extracted features are mapped to the UV Gaussian Decoder by projecting a parametric template mesh onto the input image and sampling feature vectors corresponding to each pixel location. In parallel, each vertex of the parametric template mesh is associated with a Gaussian primitive, which is parameterized and learned as part of a vertex-wise feature branch.
+        </p>
+
+        <p>
+          The resulting canonical Gaussian representation is then animated according to the predefined SMPL-X articulation model, implemented via Linear Blend Skinning (LBS). Finally, GS rasterizer generates the final rendered image, achieving photorealistic animation quality from a single feed-forward inference.
+        </p>
+      </div>
+
+      <!-- </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End overview -->
+
+<!-- Overview -->
+ <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Data Collection and Processing</h2>
+      </div>
+      <!-- <img src="static/images/overview.png" class="center"> -->
+      <!-- <h2 class="subtitle has-text-justified"> -->
+      <div class="content has-text-justified">
+        <p>
+          We construct a large-scale dataset of whole-body talking human videos paired with synchronized audio. The dataset combines publicly available full-body video sources (e.g., Causal Conversations Dataset v1/v2), web-crawled videos, and in-house recordings, resulting in approximately 15,000 unique identities.
+        </p>
+
+        <p>
+          To enable 3D Gaussian initialization and provide driving signals for animation, we extract parametric motion representations in the SMPL-X format from all collected videos. We further propose a hybrid fitting strategy that separately estimates facial and body parameters and then integrates them into a unified representation. This design yields notable improvements in facial expression accuracy and lip-synchronization performance, ensuring high-quality expressive motion reconstruction.
+        </p>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="content">
+          <p class="title is-4">Data Examples & Human Motion Capture</p>
+        </div>
+      </div>
+      <div class="container">
+      <!-- <h2 class="title is-3">Human Motion Capture: Samples</h2> -->
+      <div class="columns is-multiline is-variable is-4 has-text-centered">
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/ex1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/ex2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/ex3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="columns is-multiline is-variable is-4 has-text-centered">
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/ex4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/ex5.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/ex6.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- End overview -->
+
+<!-- Video Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results: Talking Animation</h2>
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="content">
+          <p class="title is-4">Animation: Novel Pose Synthesis</p>
+        </div>
+      </div> -->
+      <div class="columns is-multiline is-variable is-4 has-text-centered">
+        <div class="column is-12-mobile is-12-tablet is-12-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/res1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-12-tablet is-12-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/res2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-12-tablet is-12-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:100%; height:100%;">
+            <source src="static/videos/res3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- <div class="columns is-multiline is-variable is-4 has-text-centered">
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:80%">
+            <source src="static/videos/res4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:80%">
+            <source src="static/videos/res5.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-12-mobile is-4-tablet is-4-desktop">
+          <video controls muted loop playsinline preload="metadata" style="width:80%">
+            <source src="static/videos/res6.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- End video results -->
+
+<!-- Futher Discussion or Conclusion (Limitation / Future Work) -->
+ <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Discussion </h2>
+      </div>
+      <!-- <img src="static/images/overview.png" class="center"> -->
+      <!-- <h2 class="subtitle has-text-justified"> -->
+      <div class="content has-text-justified">
+         <p>
+          <b>Limitation.</b>
+        </p>
+        <p>
+          <!-- (i) Although our model enables real-time, feed-forward inference for arbitrary subjects without subject-specific training, its visual quality remains limited, particularly in terms of output resolution and fine-grained rendering details. (ii) To generate talking animations, our system currently relies on an external audio-to-motion (SMPL-X) generation model. However, this approach does not fully capture or adapt to each avatar’s unique style and expressiveness, leading to constraints in achieving truly personalized and natural motion synthesis. -->
+          <ol type="i">
+            <li>
+              Although our model enables real-time, feed-forward inference for arbitrary subjects without subject-specific training, its visual quality remains limited, particularly in terms of output resolution and fine-grained rendering details.
+            </li>
+            <li>
+              To generate talking animations, our system currently relies on an external audio-to-motion (SMPL-X) generation model. However, this approach does not fully capture or adapt to each avatar’s unique style and expressiveness, leading to constraints in achieving truly personalized and natural motion synthesis.
+            </li>
+          </ol>
+         </p>
+        <!-- <p>
+          <b>Future work:</b> -->
+          <!-- (i) A straightforward extension would be to increase the number of Gaussian primitives in the representation, which could enhance visual fidelity. However, doing so requires substantially more training data to maintain generalization performance. Thus, scaling up the dataset and retraining the model on a much larger corpus represents a simple yet effective next step. (ii) A more promising direction is to design an end-to-end pipeline that integrates audio-to-motion and motion-to-3D avatar animation within a single framework. This would minimize intermediate information loss between stages, enhance stylistic consistency and expressiveness, and still preserve the advantages of real-time parametric motion animation. -->
+        <!-- </p> -->
+        <p>
+          <b>Future Work.</b>
+          <!-- (i) Although our model enables real-time, feed-forward inference for arbitrary subjects without subject-specific training, its visual quality remains limited, particularly in terms of output resolution and fine-grained rendering details. (ii) To generate talking animations, our system currently relies on an external audio-to-motion (SMPL-X) generation model. However, this approach does not fully capture or adapt to each avatar’s unique style and expressiveness, leading to constraints in achieving truly personalized and natural motion synthesis. -->
+          <ol type="i">
+            <li>
+              A straightforward extension would be to increase the number of Gaussian primitives in the representation, which could enhance visual fidelity. However, doing so requires substantially more training data to maintain generalization performance. Thus, scaling up the dataset and retraining the model on a much larger corpus represents a simple yet effective next step.
+            </li>
+            <li>
+              A more promising direction is to design an end-to-end pipeline that integrates audio-to-motion and motion-to-3D avatar animation within a single framework. This would minimize intermediate information loss between stages, enhance stylistic consistency and expressiveness, and still preserve the advantages of real-time parametric motion animation.
+            </li>
+          </ol>
+         </p>
+      </div>
+      <!-- </h2> -->
+    </div>
+  </div>
+</section>
+<!-- Conclusion -->
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Supplementary Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <div class="publication-video"> -->
+            <!-- TODO: Replace with your YouTube video ID -->
+            <!-- <iframe src="https://www.youtube.com/embed/ytrKDNqACqM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+<!-- Poster Image -->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Poster</h2>
+      <img src="static/images/MPMAvatar_Poster.png" class="center">
+    </div>
+  </div>
+</section> -->
+<!-- End poster image -->
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@inproceedings{lee2025mpmavatar,
+  title={MPMAvatar: Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics},
+  author={Lee, Changmin and Lee, Jihyun and Kim, Tae-Kyun},
+  booktitle={NeurIPS},
+  year={2025}
+}</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
