@@ -111,10 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedEl = document.querySelector('.typed-text');
     if (typedEl) {
         const phrases = [
-            '3D Human Avatars',
-            '3D Gaussian Splatting',
-            'Geometric Deep Learning',
-            'Medical Image Analysis'
+            '3D Shape Analysis',
+            'Medical Image Analysis',
+            '3D Human Vision & Graphics',
+            'Visual AI Agent'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
