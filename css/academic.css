@@ -428,6 +428,10 @@ img {
     max-width: 680px;
 }
 
+.about-text + .about-text {
+    margin-top: 12px;
+}
+
 .about-text a {
     font-weight: 600;
     border-bottom: 1px solid var(--border-color);
