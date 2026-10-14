@@ -148,40 +148,15 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeLoop, 1000);
     }
 
-    // ── Publication Filtering ──────────────────────────────
-    const filterTabs = document.querySelectorAll('.filter-tab');
-    const pubCards = document.querySelectorAll('#publications .pub-card');
+    // ── Publication Tabs ───────────────────────────────────
+    const filterTabs = document.querySelectorAll('#publications .filter-tab');
+    const pubPanels = document.querySelectorAll('#publications .pub-panel');
 
     filterTabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            filterTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            const filter = tab.dataset.filter;
-
-            pubCards.forEach(card => {
-                if (filter === 'all' || card.dataset.venue === filter) {
-                    card.style.display = '';
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(10px)';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                    }, 50);
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            // Hide a subheading + its grid when no cards remain visible in it
-            document.querySelectorAll('#publications .pub-grid').forEach(grid => {
-                const hasVisible = [...grid.querySelectorAll('.pub-card')]
-                    .some(card => card.style.display !== 'none');
-                grid.style.display = hasVisible ? '' : 'none';
-                const subhead = grid.previousElementSibling;
-                if (subhead && subhead.classList.contains('pub-subhead')) {
-                    subhead.style.display = hasVisible ? '' : 'none';
-                }
+            filterTabs.forEach(t => t.classList.toggle('active', t === tab));
+            pubPanels.forEach(panel => {
+                panel.hidden = panel.dataset.panel !== tab.dataset.panel;
             });
         });
     });

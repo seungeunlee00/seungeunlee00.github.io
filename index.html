@@ -188,134 +188,261 @@
                 </div>
 
                 <div class="filter-tabs reveal">
-                    <button class="filter-tab active" data-filter="all">All</button>
-                    <button class="filter-tab" data-filter="cvpr">CVPR</button>
-                    <button class="filter-tab" data-filter="iclr">ICLR</button>
-                    <button class="filter-tab" data-filter="miccai">MICCAI</button>
-                    <button class="filter-tab" data-filter="tmi">TMI</button>
+                    <button class="filter-tab active" data-panel="selected">Selected</button>
+                    <button class="filter-tab" data-panel="all">All</button>
                 </div>
 
-                <p class="pub-note">* For the papers listed below, I proactively led every stage of the work,
-                    including (i) problem definition, (ii) technical challenge analysis, (iii) methodology design,
-                    (iv) model development, (v) data processing, (vi) experiments, and (vii) writing.</p>
+                <div class="pub-panel" data-panel="selected">
+                    <p class="pub-note">* For the papers listed below, I proactively led every stage of the work,
+                        including (i) problem definition, (ii) technical challenge analysis, (iii) methodology design,
+                        (iv) model development, (v) data processing, (vi) experiments, and (vii) writing.</p>
 
-                <div class="pub-grid stagger">
+                    <div class="pub-grid stagger">
 
-                    <!-- AudioAvatar -->
-                    <article class="pub-card" data-venue="cvpr">
-                        <img src="resources/paper/dvdm_v3.png" alt="AudioAvatar" class="pub-card-img">
-                        <div class="pub-card-body">
-                            <h3>AudioAvatar: Personalized Audio-driven Whole-body Talking Avatars</h3>
-                            <div class="pub-venue">
-                                <span class="pub-venue-tag">CVPR 2026</span>
+                        <!-- AudioAvatar -->
+                        <article class="pub-card">
+                            <img src="resources/paper/dvdm_v3.png" alt="AudioAvatar" class="pub-card-img">
+                            <div class="pub-card-body">
+                                <h3>AudioAvatar: Personalized Audio-driven Whole-body Talking Avatars</h3>
+                                <div class="pub-venue">
+                                    <span class="pub-venue-tag">CVPR 2026</span>
+                                </div>
+                                <div class="pub-authors"><span class="me">Seungeun Lee</span>, SeungJun Moon, Hah Min Lew,
+                                    Ji-Su Kang, Gyeong-Moon Park</div>
+                                <div class="pub-authors"><i>Keyword: 3D Avatar Reconstruction from a Single Image, 3D
+                                        Gaussian Talking Avatars</i></div>
+                                <div class="pub-links">
+                                    <a href="projects/dvdm/" class="pub-link"><i class="fas fa-globe"></i> Project</a>
+                                    <a href="resources/paper/CVPR26-AudioAvatar.pdf" class="pub-link"><i
+                                            class="fas fa-file-pdf"></i> PDF</a>
+                                </div>
                             </div>
-                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, SeungJun Moon, Hah-Min Lew,
-                                Ji-Su Kang, Gyeong-Moon Park</div>
-                            <div class="pub-authors"><i>Keyword: 3D Avatar Reconstruction from a Single Image, 3D
-                                    Gaussian Talking Avatars</i></div>
+                        </article>
+
+                        <!-- SMAGA -->
+                        <article class="pub-card">
+                            <img src="resources/paper/smaga.png" alt="SMAGA" class="pub-card-img">
+                            <div class="pub-card-body">
+                                <h3>Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos</h3>
+                                <div class="pub-venue">
+                                    <span class="pub-venue-tag">ICLR 2026</span>
+                                </div>
+                                <div class="pub-authors"><span class="me">Seungeun Lee</span>, SeungJun Moon, Hah Min Lew,
+                                    Ji-Su Kang, Gyeong-Moon Park</div>
+                                <div class="pub-authors"><i>Keyword: 3D Avatar Reconstruction and Animation, 3D Gaussian
+                                        Clothed Avatars</i></div>
+                                <div class="pub-links">
+                                    <a href="projects/smaga/" class="pub-link"><i class="fas fa-globe"></i> Project</a>
+                                    <a href="resources/paper/ICLR26-SMAGA.pdf" class="pub-link"><i
+                                            class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://openreview.net/forum?id=2A3Q2EtGTF" class="pub-link"><i
+                                            class="fas fa-comments"></i> OpenReview</a>
+                                    <a href="https://iclr.cc/virtual/2026/poster/10011771" class="pub-link"><i
+                                            class="fas fa-image"></i> Poster</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Score-Guided Cortical Correspondence -->
+                        <article class="pub-card">
+                            <img src="resources/paper/sgcc.png" alt="Score-Guided Cortical Correspondence"
+                                class="pub-card-img">
+                            <div class="pub-card-body">
+                                <h3>Spherical Diffusion Process for Score-Guided Cortical Correspondence via Spectral
+                                    Attention</h3>
+                                <div class="pub-venue">
+                                    <span class="pub-venue-tag">MICCAI 2025</span>
+                                </div>
+                                <div class="pub-authors"><span class="me">Seungeun Lee</span>, Sergey Pyatkovskiy, Jaejun
+                                    Yoo, Ilwoo Lyu</div>
+                                <div class="pub-authors"><i>Keyword: Spherical Image Registration, Score-based Diffusion
+                                        Process on the Sphere</i></div>
+                                <div class="pub-links">
+                                    <a href="https://papers.miccai.org/miccai-2025/paper/1268_paper.pdf"
+                                        class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="resources/paper/poster-sgcc.pdf" class="pub-link"><i
+                                            class="fas fa-image"></i> Poster</a>
+                                    <a href="https://github.com/seungeunlee1228/S2SD-Reg" class="pub-link"><i
+                                            class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- SPHARM-Reg -->
+                        <article class="pub-card">
+                            <img src="resources/paper/spharm-reg.png" alt="SPHARM-Reg" class="pub-card-img">
+                            <div class="pub-card-body">
+                                <h3>SPHARM-Reg: Unsupervised Cortical Surface Registration using Spherical Harmonics</h3>
+                                <div class="pub-venue">
+                                    <span class="pub-venue-tag">IEEE TMI 2025</span>
+                                </div>
+                                <div class="pub-authors"><span class="me">Seungeun Lee</span>, Seunghwan Lee, Sunghwa Ryu,
+                                    Ilwoo Lyu</div>
+                                <div class="pub-authors"><i>Keyword: Spherical Registration, Spherical Harmonic
+                                        Analysis</i></div>
+                                <div class="pub-links">
+                                    <a href="https://ieeexplore.ieee.org/document/11045740" class="pub-link"><i
+                                            class="fas fa-link"></i> DOI</a>
+                                    <a href="resources/paper/TMI25-SPHARM-Reg.pdf" class="pub-link"><i
+                                            class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://github.com/seungeunlee1228/SPHARM-Demons" class="pub-link"><i
+                                            class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- DSPHARM-Net -->
+                        <article class="pub-card">
+                            <img src="resources/paper/dspharm.png" alt="Sulcal Labeling" class="pub-card-img">
+                            <div class="pub-card-body">
+                                <h3>Leveraging Input-Level Feature Deformation with Guided-Attention for Sulcal Labeling
+                                </h3>
+                                <div class="pub-venue">
+                                    <span class="pub-venue-tag">IEEE TMI 2025</span>
+                                </div>
+                                <div class="pub-authors"><span class="me">Seungeun Lee</span>, Seunghwan Lee, Ethan
+                                    Willbrand, Benjamin Parker, Silvia Bunge, Kevin Weiner, Ilwoo Lyu</div>
+                                <div class="pub-authors"><i>Keyword: Sulcal Labeling, Diffeomorphic Deformation</i></div>
+                                <div class="pub-links">
+                                    <a href="https://ieeexplore.ieee.org/document/10695448" class="pub-link"><i
+                                            class="fas fa-link"></i> DOI</a>
+                                    <a href="resources/paper/TMI25-DSPHARM.pdf" class="pub-link"><i
+                                            class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://github.com/Shape-Lab/DSPHARM-Net" class="pub-link"><i
+                                            class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="pub-panel" data-panel="all" hidden>
+                    <p class="pub-note">* Equal contribution</p>
+
+                    <h3 class="pub-subhead">2026</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-item-title">Efficient Universal Lip Synchronization via Audio-Visual Alignment to Implicit Motion Space</div>
+                            <div class="pub-authors">Sangjoon Yu*, <span class="me">Seungeun Lee</span>*, JoonHyeok Shin, Ji-Su Kang</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">BMVC 2026</span> British Machine Vision Conference</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">AudioAvatar: Personalized Audio-driven Whole-body Talking Avatars</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, SeungJun Moon, Hah Min Lew, Ji-Su Kang, Gyeong-Moon Park</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">CVPR 2026</span> IEEE/CVF Conference on Computer Vision and Pattern Recognition</div>
                             <div class="pub-links">
                                 <a href="projects/dvdm/" class="pub-link"><i class="fas fa-globe"></i> Project</a>
-                                <a href="resources/paper/CVPR26-AudioAvatar.pdf" class="pub-link"><i
-                                        class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="resources/paper/CVPR26-AudioAvatar.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
                             </div>
-                        </div>
-                    </article>
-
-                    <!-- SMAGA -->
-                    <article class="pub-card" data-venue="iclr">
-                        <img src="resources/paper/smaga.png" alt="SMAGA" class="pub-card-img">
-                        <div class="pub-card-body">
-                            <h3>Secondary Motion-aware 3D Clothed Gaussian Avatars for Monocular Videos</h3>
-                            <div class="pub-venue">
-                                <span class="pub-venue-tag">ICLR 2026</span>
-                            </div>
-                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, SeungJun Moon, Hah-Min Lew,
-                                Ji-Su Kang, Gyeong-Moon Park</div>
-                            <div class="pub-authors"><i>Keyword: 3D Avatar Reconstruction and Animation, 3D Gaussian
-                                    Clothed Avatars</i></div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, SeungJun Moon, Hah Min Lew, Ji-Su Kang, Gyeong-Moon Park</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">ICLR 2026</span> International Conference on Learning Representations</div>
                             <div class="pub-links">
                                 <a href="projects/smaga/" class="pub-link"><i class="fas fa-globe"></i> Project</a>
-                                <a href="resources/paper/ICLR26-SMAGA.pdf" class="pub-link"><i
-                                        class="fas fa-file-pdf"></i> PDF</a>
-                                <a href="https://openreview.net/forum?id=2A3Q2EtGTF" class="pub-link"><i
-                                        class="fas fa-comments"></i> OpenReview</a>
-                                <a href="https://iclr.cc/virtual/2026/poster/10011771" class="pub-link"><i
-                                        class="fas fa-image"></i> Poster</a>
+                                <a href="resources/paper/ICLR26-SMAGA.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://openreview.net/forum?id=2A3Q2EtGTF" class="pub-link"><i class="fas fa-comments"></i> OpenReview</a>
+                                <a href="https://iclr.cc/virtual/2026/poster/10011771" class="pub-link"><i class="fas fa-image"></i> Poster</a>
                             </div>
-                        </div>
-                    </article>
+                        </li>
+                    </ul>
 
-                    <!-- Score-Guided Cortical Correspondence -->
-                    <article class="pub-card" data-venue="miccai">
-                        <img src="resources/paper/sgcc.png" alt="Score-Guided Cortical Correspondence"
-                            class="pub-card-img">
-                        <div class="pub-card-body">
-                            <h3>Spherical Diffusion Process for Score-Guided Cortical Correspondence via Spectral
-                                Attention</h3>
-                            <div class="pub-venue">
-                                <span class="pub-venue-tag">MICCAI 2025</span>
-                            </div>
-                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Sergey Pyatkovskiy, Jaejun
-                                Yoo, Ilwoo Lyu</div>
-                            <div class="pub-authors"><i>Keyword: Spherical Image Registration, Score-based Diffusion
-                                    Process on the Sphere</i></div>
+                    <h3 class="pub-subhead">2025</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-item-title">GeoAvatar: Adaptive Geometrical Gaussian Splatting for 3D Head Avatar</div>
+                            <div class="pub-authors">SeungJun Moon, Hah Min Lew, <span class="me">Seungeun Lee</span>, Ji-Su Kang, Gyeong-Moon Park</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">ICCV 2025</span> IEEE/CVF International Conference on Computer Vision</div>
                             <div class="pub-links">
-                                <a href="https://papers.miccai.org/miccai-2025/paper/1268_paper.pdf"
-                                    class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                                <a href="resources/paper/poster-sgcc.pdf" class="pub-link"><i
-                                        class="fas fa-image"></i> Poster</a>
-                                <a href="https://github.com/seungeunlee1228/S2SD-Reg" class="pub-link"><i
-                                        class="fab fa-github"></i> Code</a>
+                                <a href="https://doi.org/10.1109/ICCV51701.2025.01190" class="pub-link"><i class="fas fa-link"></i> DOI</a>
                             </div>
-                        </div>
-                    </article>
-
-                    <!-- SPHARM-Reg -->
-                    <article class="pub-card" data-venue="tmi">
-                        <img src="resources/paper/spharm-reg.png" alt="SPHARM-Reg" class="pub-card-img">
-                        <div class="pub-card-body">
-                            <h3>SPHARM-Reg: Unsupervised Cortical Surface Registration using Spherical Harmonics</h3>
-                            <div class="pub-venue">
-                                <span class="pub-venue-tag">IEEE TMI 2025</span>
-                            </div>
-                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Seunghwan Lee, Sunghwa Ryu,
-                                Ilwoo Lyu</div>
-                            <div class="pub-authors"><i>Keyword: Spherical Registration, Spherical Harmonic
-                                    Analysis</i></div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">Spherical Diffusion Process for Score-Guided Cortical Correspondence via Spectral Attention</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Sergey Pyatkovskiy, Jaejun Yoo, Ilwoo Lyu</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">MICCAI 2025</span> Medical Image Computing and Computer Assisted Intervention</div>
                             <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/document/11045740" class="pub-link"><i
-                                        class="fas fa-link"></i> DOI</a>
-                                <a href="resources/paper/TMI25-SPHARM-Reg.pdf" class="pub-link"><i
-                                        class="fas fa-file-pdf"></i> PDF</a>
-                                <a href="https://github.com/seungeunlee1228/SPHARM-Demons" class="pub-link"><i
-                                        class="fab fa-github"></i> Code</a>
+                                <a href="https://doi.org/10.1007/978-3-032-05325-1_52" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                                <a href="https://papers.miccai.org/miccai-2025/paper/1268_paper.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="resources/paper/poster-sgcc.pdf" class="pub-link"><i class="fas fa-image"></i> Poster</a>
+                                <a href="https://github.com/seungeunlee1228/S2SD-Reg" class="pub-link"><i class="fab fa-github"></i> Code</a>
                             </div>
-                        </div>
-                    </article>
-
-                    <!-- DSPHARM-Net -->
-                    <article class="pub-card" data-venue="tmi">
-                        <img src="resources/paper/dspharm.png" alt="Sulcal Labeling" class="pub-card-img">
-                        <div class="pub-card-body">
-                            <h3>Leveraging Input-Level Feature Deformation with Guided-Attention for Sulcal Labeling
-                            </h3>
-                            <div class="pub-venue">
-                                <span class="pub-venue-tag">IEEE TMI 2025</span>
-                            </div>
-                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Seunghwan Lee, Ethan
-                                Willbrand, Benjamin Parker, Silvia Bunge, Kevin Weiner, Ilwoo Lyu</div>
-                            <div class="pub-authors"><i>Keyword: Sulcal Labeling, Diffeomorphic Deformation</i></div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">SPHARM-Reg: Unsupervised Cortical Surface Registration Using Spherical Harmonics</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Seunghwan Lee, Sunghwa Ryu, Ilwoo Lyu</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">IEEE TMI 2025</span> IEEE Transactions on Medical Imaging</div>
                             <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/document/10695448" class="pub-link"><i
-                                        class="fas fa-link"></i> DOI</a>
-                                <a href="resources/paper/TMI25-DSPHARM.pdf" class="pub-link"><i
-                                        class="fas fa-file-pdf"></i> PDF</a>
-                                <a href="https://github.com/Shape-Lab/DSPHARM-Net" class="pub-link"><i
-                                        class="fab fa-github"></i> Code</a>
+                                <a href="https://doi.org/10.1109/TMI.2025.3581605" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                                <a href="resources/paper/TMI25-SPHARM-Reg.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://github.com/seungeunlee1228/SPHARM-Demons" class="pub-link"><i class="fab fa-github"></i> Code</a>
                             </div>
-                        </div>
-                    </article>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">Extensive Spherical Region Enlargement with Isotropic Deformation for Sulcal Labeling</div>
+                            <div class="pub-authors">Seunghwan Lee, Jiwon Son, <span class="me">Seungeun Lee</span>, Ethan H. Willbrand, Benjamin J. Parker, Kevin S. Weiner, Ilwoo Lyu</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">ISBI 2025</span> IEEE International Symposium on Biomedical Imaging</div>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1109/ISBI60581.2025.10981062" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">Leveraging Input-Level Feature Deformation with Guided-Attention for Sulcal Labeling</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Seunghwan Lee, Ethan H. Willbrand, Benjamin J. Parker, Silvia A. Bunge, Kevin S. Weiner, Ilwoo Lyu</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">IEEE TMI 2025</span> IEEE Transactions on Medical Imaging</div>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1109/TMI.2024.3468727" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                                <a href="resources/paper/TMI25-DSPHARM.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://github.com/Shape-Lab/DSPHARM-Net" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </li>
+                    </ul>
 
+                    <h3 class="pub-subhead">2023</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-item-title">Unsupervised Learning of Cortical Surface Registration Using Spherical Harmonics</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span>, Sunghwa Ryu, Seunghwan Lee, Ilwoo Lyu</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">ShapeMI 2023</span> International Workshop on Shape in Medical Imaging</div>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1007/978-3-031-46914-5_6" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-item-title">Facial Texure Perceiver: Towards High-Fidelity Facial Texture Recovery with Input-Level Inductive Biased Perceiver IO</div>
+                            <div class="pub-authors"><span class="me">Seungeun Lee</span></div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">ICASSP 2023</span> IEEE International Conference on Acoustics, Speech and Signal Processing</div>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1109/ICASSP49357.2023.10096776" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="pub-subhead">2022</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-item-title">Learning 3D Skeletal Representation From Transformer for Action Recognition</div>
+                            <div class="pub-authors">Junuk Cha, Muhammad Saqlain, Donguk Kim, <span class="me">Seungeun Lee</span>, Seongyeong Lee, Seungryul Baek</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">IEEE Access 2022</span> IEEE Access</div>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1109/ACCESS.2022.3185058" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="pub-subhead">2021</h3>
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-item-title">Towards Single 2D Image-Level Self-Supervision for 3D Human Pose and Shape Estimation</div>
+                            <div class="pub-authors">Junuk Cha, Muhammad Saqlain, Changhwa Lee, Seongyeong Lee, <span class="me">Seungeun Lee</span>, Donguk Kim, Won-Hee Park, Seungryul Baek</div>
+                            <div class="pub-item-venue"><span class="pub-venue-tag">Applied Sciences 2021</span> Applied Sciences</div>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.3390/app11209724" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 

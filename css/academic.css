@@ -668,6 +668,47 @@ img {
     font-weight: 600;
 }
 
+/* Full publication list (All tab) */
+.pub-panel[hidden] {
+    display: none;
+}
+
+.pub-list {
+    list-style: none;
+}
+
+.pub-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pub-item:last-child {
+    border-bottom: none;
+}
+
+.pub-item-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.45;
+    margin-bottom: 4px;
+}
+
+.pub-item .pub-authors {
+    margin-bottom: 4px;
+}
+
+.pub-item-venue {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.pub-item-venue .pub-venue-tag {
+    margin-right: 6px;
+}
+
 .pub-links {
     display: flex;
     gap: 10px;
