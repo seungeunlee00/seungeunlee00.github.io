@@ -518,17 +518,6 @@ img {
     white-space: nowrap;
 }
 
-.award-desc {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    font-style: italic;
-    margin-top: 2px;
-}
-
-.award-links {
-    margin-top: 4px;
-}
-
 /* ═══════════════════════════════════════════════════════════
    Publications
    ═══════════════════════════════════════════════════════════ */
