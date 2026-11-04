@@ -1,2 +1,6 @@
 User-agent: *
 Disallow: /resources/
+Disallow: /projects/dvdm/static/
+Disallow: /projects/smaga/static/
+Disallow: /projects/gentalkava/static/
+Disallow: /projects/rigging/static/
