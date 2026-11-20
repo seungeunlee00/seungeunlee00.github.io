@@ -111,10 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedEl = document.querySelector('.typed-text');
     if (typedEl) {
         const phrases = [
-            'AI for Healthcare',
             '3D Shape Analysis',
-            'NeuroImaging',
-            'Digital Human'
+            'Geometric Deep Learning'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
